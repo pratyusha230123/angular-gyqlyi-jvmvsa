@@ -1,4 +1,4 @@
-export const customers = [
+/*export const customers = [
   {
     customerId: 1,
     storeId: 1,
@@ -4192,4 +4192,4 @@ export const customers = [
     lastName: 'CINTRON',
     email: 'AUSTIN.CINTRON@sakilacustomer.org',
   },
-];
+]; */

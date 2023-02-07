@@ -1,15 +1,15 @@
-<h2>Products</h2>
+<!-- <h2>Products</h2>
 
 <div *ngFor="let product of productsVar">
 
   <h3>
      {{product.name}} - {{product.price}}
   </h3>
-</div>
+</div> -->
 
 
 <div>
-  <h1> Customer Details </h1>
+  <h1> Customer Details via DB</h1>
   <table border="1" style='width:100%'>
     <tr>
       <th> Customer Id </th>
@@ -17,7 +17,7 @@
       <th> Last Name </th>
       <th> Email Id </th>
     </tr>
-    <tr *ngFor= "let customer of customersVar">
+    <tr *ngFor= "let customer of newdata">
       <th> {{ customer.customerId }}</th>
       <th> {{ customer.firstName }}</th>
       <th> {{ customer.lastName }}</th>

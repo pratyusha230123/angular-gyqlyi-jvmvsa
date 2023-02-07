@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 
 import { products } from '../products';
 
-import { customers } from '../customers';
+//import { customers } from '../customers';
+import { ApiServiceService } from '../service';
 
 @Component({
   selector: 'app-product-list',
@@ -11,7 +12,16 @@ import { customers } from '../customers';
 })
 export class ProductListComponent {
   productsVar = products;
-  customersVar = customers;
+  //customersVar = customers;
+
+  newdata:any;
+  constructor(private _apiservice : ApiServiceService){}
+
+  ngOnInit(){
+    this._apiservice.getData().subscribe(res=>{
+      this.newdata=res;
+    })
+  }
 
   share() {
     window.alert('The product has been shared!');
